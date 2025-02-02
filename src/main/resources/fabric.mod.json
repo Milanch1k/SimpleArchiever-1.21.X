@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "simplearchiever",
+	"version": "${version}",
+	"name": "SimpleArchiever",
+	"description": "This simple mod gives you the ability to zip and compress your files with a command.",
+	"authors": [
+		"Milanchik"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/simplearchiever/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.milanchik.simplearchiever.SimpleArchiever"
+		],
+		"fabric-datagen": [
+			"net.milanchik.simplearchiever.SimpleArchieverDataGenerator"
+		],
+		"client": [
+			"net.milanchik.simplearchiever.SimpleArchieverClient"
+		]
+	},
+	"mixins": [
+		"simplearchiever.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "1.21.X",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
